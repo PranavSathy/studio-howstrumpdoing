@@ -6,6 +6,10 @@ export const postType = defineType({
   type: 'document',
   fields: [
     defineField({
+      name: 'thread_id',
+      type: 'string',
+    }),
+    defineField({
       name: 'title',
       type: 'string',
       validation: (rule) => rule.required(),
